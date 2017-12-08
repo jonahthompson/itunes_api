@@ -1,0 +1,9 @@
+<h1>Itunes API</h1>
+<div class="songs">
+	<% @songs.each do |song| %>
+		<div class="song">
+			<p><%= song[:trackName] %></p>
+			<p><%= song[:trackId] %></p>
+		</div>
+	<% end %>
+</div>
